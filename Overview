@@ -1,0 +1,17 @@
+# Aegis Protocol
+
+> Non-custodial permission firewall for on-chain safety.
+
+Aegis is a non-custodial permission firewall designed to reduce user fund loss
+caused by unlimited token approvals, compromised dApps, malicious upgrades,
+or wallet drains.
+
+## Key Features
+- On-chain spending limits
+- Per-transaction caps
+- Time-bound approvals
+- Action-scoped permissions
+
+## Design Goal
+Improve user safety while preserving existing swap, liquidity,
+pricing, routing, and execution flows.

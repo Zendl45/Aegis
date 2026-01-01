@@ -1,0 +1,15 @@
+## Action-Scoped Permissions
+
+Permissions are strictly scoped to specific actions and cannot be reused
+outside their approved intent.
+
+### Examples
+- A permission that allows swaps cannot be used to add liquidity
+- A permission that allows NFT trades cannot be used to bridge assets
+- Any attempt to perform an unapproved action is automatically rejected
+
+If a transaction attempts to execute an action outside the permitted scope,
+the protocol reverts the transaction on-chain.
+
+By enforcing action-level restrictions, the protocol significantly reduces
+the blast radius of compromised or malicious integrations.

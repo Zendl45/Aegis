@@ -1,0 +1,15 @@
+## Benefits
+
+The protocol provides a safety-first layer that improves user protection
+without disrupting existing DeFi infrastructure.
+
+### Key Advantages
+- Reduces user fund loss from compromised approvals
+- Lowers support and incident response overhead
+- Improves user trust in token approvals
+- Requires minimal changes to existing frontends
+- Does not interfere with AMM or execution logic
+- Does not affect pricing, slippage, or routing behavior
+
+This protocol operates purely as a safety layer and does not act as a competing
+execution or liquidity system.

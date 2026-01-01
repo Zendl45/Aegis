@@ -1,0 +1,27 @@
+## Example Scenario
+
+A user wants to trade using a decentralized exchange while limiting potential
+downside risk.
+
+### User-Defined Permission
+The user creates a permission with the following constraints:
+- Total spending limit: $1,000 (from an initial balance of $100,000)
+- Per-transaction limit: $200
+- Validity period: 7 days or more
+- Allowed action: Swap only
+
+### Attack Attempt: Single Transaction
+If a malicious contract attempts to drain $1,000 in a single transaction:
+- The transaction exceeds the per-transaction limit of $200
+- The protocol automatically reverts the transaction
+- No funds leave the user’s wallet
+
+### Attack Attempt: Multiple Transactions
+If a malicious contract attempts to drain funds using multiple transactions:
+- Each transaction is capped at $200
+- Once the total spending limit of $1,000 is reached, all subsequent transactions revert
+- The maximum possible loss is limited to $1,000 instead of the full $100,000 balance
+
+### Automatic Expiry
+- The permission expires automatically after the defined validity period
+- No manual approval revocation or user intervention is required

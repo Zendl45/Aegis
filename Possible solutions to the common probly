@@ -1,0 +1,16 @@
+## Solution Overview
+
+This protocol introduces a permission layer between users and decentralized
+applications (dApps) to enforce fine-grained, on-chain safety controls.
+
+### Core Capabilities
+- Enforces a maximum spend per transaction
+- Enforces a maximum cumulative spend
+- Restricts the specific actions a spender can perform
+- Automatically expires permissions after a defined period
+- Reverts any transaction that violates configured constraints
+
+## Non-Goals
+- The protocol does not custody user funds
+- The protocol does not modify swap or execution logic
+- The protocol does not alter pricing or routing mechanisms

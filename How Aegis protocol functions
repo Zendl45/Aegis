@@ -1,0 +1,19 @@
+## How It Works
+
+Instead of approving a DEX router directly, the user creates a permission with
+explicit, predefined constraints.
+
+### Execution Flow
+When a dApp or DEX attempts to execute an action:
+
+1. The protocol verifies that the requested action is permitted
+2. The protocol checks that the transaction amount does not exceed the
+   per-transaction spending limit
+3. The protocol verifies that the total allowed spend has not been exhausted
+4. The protocol checks that the permission is still within its valid time window
+
+If any of these checks fail, the transaction reverts.
+
+If all checks pass, the transaction executes normally without modification.
+
+All validation and enforcement occur fully on-chain and atomically.

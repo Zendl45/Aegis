@@ -1,0 +1,12 @@
+## Transaction Reverts
+
+A transaction is automatically reverted when any of the following conditions
+are met:
+
+- The per-transaction spending limit is exceeded
+- The total allowed spending limit has been exhausted
+- The permission has expired
+- The requested action is not within the approved scope
+
+All failure conditions are deterministic, enforced fully on-chain, and
+designed to fail safely without risking user funds.

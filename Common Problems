@@ -1,0 +1,14 @@
+## Problem Statement
+
+Most users approve tokens using unlimited allowances, often without fully
+understanding the risks involved. While this approach is convenient, it creates
+a significant on-chain attack surface.
+
+### Key Risks
+- Malicious contracts can drain user wallets
+- Compromised routers can overspend approved tokens
+- Users rarely revoke existing approvals
+- Approval risks are difficult for users to understand and monitor
+
+Once an approval is granted, users typically have no on-chain protection
+mechanisms in place if a contract behaves maliciously or is later compromised.
